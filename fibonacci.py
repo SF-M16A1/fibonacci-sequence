@@ -4,10 +4,8 @@
 def fibonacci(x):
     y = 0
     result = [0, 1]
-    c = 0
     while y < x:
-        z = result[c] + result[c + 1]
-        c += 1
+        z = result[y] + result[y + 1]
         y += 1
         result.append(z)
     return result
